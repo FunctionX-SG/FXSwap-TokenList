@@ -923,6 +923,18 @@
             "decimals": 18,
             "address": "0x4a4b9616653515dd22cc316c6e538ff223144252",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4a4b9616653515dd22cc316c6e538ff223144252/logo-athens.png"
+        },
+        {
+            "name": "Nusantara",
+            "chainId": 530,
+            "symbol": "NUSA",
+            "decimals": 18,
+            "address": "0x80b887EF1A4bE87AE62c08d30fc2A01A912f4B80",
+            "logoURI": "https://raw.githubusercontent.com/aguscryptocom/images/main/token/0x80b887EF1A4bE87AE62c08d30fc2A01A912f4B80.png",
+            "extensions": {
+                "twitter": "https://twitter.com/agusCryptocom",
+                "website": "https://aguscrypto.com/nusantara/"
+            }
         }
     ]
   }
