@@ -13,15 +13,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Fetch all branches
+        run: git fetch --all
+
       - name: Delete stale branches
         run: |
-          # List branches that haven't been updated in the last 7 days
-          branches=$(git branch -r --format='%(refname:short) %(committerdate:unix)' | awk -v date=$(date +%s -d '7 days ago') '$2 < date {print $1}')
+          # Get the date 7 days ago in YYYY-MM-DD format
+          seven_days_ago=$(date -d '7 days ago' +%Y-%m-%d)
 
-          # Loop through branches and delete them
-          for branch in $branches; do
+          # List branches that haven't been updated in the last 7 days
+          for branch in $(git for-each-ref --format='%(refname:short) %(committerdate:short)' refs/remotes/origin | awk -v date="$seven_days_ago" '$2 <= date {print $1}'); do
             # Ensure the branch is not 'main', 'master', or any protected branches
-            if [[ "$branch" != *"main"* && "$branch" != *"master"* ]]; then
+            if [[ "$branch" != "origin/main" && "$branch" != "origin/master" && "$branch" != *"HEAD"* ]]; then
               git push origin --delete ${branch#origin/}
               echo "Deleted branch $branch"
             fi
