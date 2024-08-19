@@ -1,0 +1,30 @@
+name: Cleanup Stale Branches
+
+on:
+  schedule:
+    # Runs at 00:00 every day
+    - cron: "0 0 * * *"
+
+jobs:
+  delete_old_branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Delete stale branches
+        run: |
+          # List branches that haven't been updated in the last 7 days
+          branches=$(git branch -r --format='%(refname:short) %(committerdate:unix)' | awk -v date=$(date +%s -d '7 days ago') '$2 < date {print $1}')
+
+          # Loop through branches and delete them
+          for branch in $branches; do
+            # Ensure the branch is not 'main', 'master', or any protected branches
+            if [[ "$branch" != *"main"* && "$branch" != *"master"* ]]; then
+              git push origin --delete ${branch#origin/}
+              echo "Deleted branch $branch"
+            fi
+          done
+
+      - name: Cleanup
+        run: git remote prune origin
