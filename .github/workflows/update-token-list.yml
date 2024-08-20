@@ -47,10 +47,32 @@ jobs:
           git config user.email "actions@github.com"
           git config core.autocrlf input
 
+      - name: Determine logo file name
+        id: determine_logo
+        run: |
+          case "${{ github.event.inputs.chainId }}" in
+            530)
+              logo_filename="logo.png"
+              ;;
+            90001)
+              logo_filename="logo-testnet.png"
+              ;;
+            7000)
+              logo_filename="logo-zeta.png"
+              ;;
+            7001)
+              logo_filename="logo-athens.png"
+              ;;
+            *)
+              logo_filename="logo.png"
+              ;;
+          esac
+          echo "logo_filename=$logo_filename" >> $GITHUB_ENV
+
       - name: Decode and save image
         run: |
           mkdir -p Tokens/${{ github.event.inputs.address }}
-          echo "${{ github.event.inputs.image }}" | base64 --decode > Tokens/${{ github.event.inputs.address }}/logo.png
+          echo "${{ github.event.inputs.image }}" | base64 --decode > Tokens/${{ github.event.inputs.address }}/${{ env.logo_filename }}
 
       - name: List files in Tokens directory
         run: ls -R Tokens/
@@ -83,25 +105,7 @@ jobs:
 
       - name: Append new token to FXList.json
         run: |
-          # Determine the correct logo file based on chainId
-          case "${{ github.event.inputs.chainId }}" in
-            530)
-              logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/logo.png"
-              ;;
-            90001)
-              logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/logo-testnet.png"
-              ;;
-            7000)
-              logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/logo-zeta.png"
-              ;;
-            7001)
-              logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/logo-athens.png"
-              ;;
-            *)
-              logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/logo.png"
-              ;;
-          esac
-
+          logoURI="https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/${{ github.event.inputs.address }}/${{ env.logo_filename }}"
           # Create token entry
           token_entry=$(jq -n \
             --arg name "${{ github.event.inputs.name }}" \
