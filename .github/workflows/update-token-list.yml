@@ -116,7 +116,7 @@ jobs:
             --arg logoURI "$logoURI" \
             --arg twitter "${{ github.event.inputs.twitter }}" \
             --arg website "${{ github.event.inputs.website }}" \
-            '{name: $name, chainId: $chainId, symbol: $symbol, decimals: $decimals, address: $address, logoURI: $logoURI, extensions: {twitter: $twitter, website: $website}} | with_entries(select(.value != "" and .value != null)) | .extensions |= with_entries(select(.value != "" and .value != null))')
+            '{name: $name, chainId: $chainId, symbol: $symbol, decimals: $decimals, address: $address, logoURI: $logoURI, extensions: {twitter: $twitter, website: $website}} | .extensions |= with_entries(select(.value != null))')
 
           # Append the new entry to the tokens array in FXList.json
           jq --argjson token_entry "$token_entry" '.tokens += [$token_entry]' FXList.json > tmp.FXList.json && mv tmp.FXList.json FXList.json
