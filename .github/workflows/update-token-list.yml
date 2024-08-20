@@ -68,6 +68,12 @@ jobs:
               ;;
           esac
           echo "logo_filename=$logo_filename" >> $GITHUB_ENV
+      
+      - name: Debug inputs
+        run: |
+        echo "Twitter: '${{ github.event.inputs.twitter }}'"
+        echo "Website: '${{ github.event.inputs.website }}'"
+
 
       - name: Decode and save image
         run: |
@@ -116,7 +122,7 @@ jobs:
             --arg logoURI "$logoURI" \
             --arg twitter "${{ github.event.inputs.twitter }}" \
             --arg website "${{ github.event.inputs.website }}" \
-            '{name: $name, chainId: $chainId, symbol: $symbol, decimals: $decimals, address: $address, logoURI: $logoURI, extensions: {twitter: $twitter, website: $website}} | .extensions |= with_entries(select(.value != null))')
+            '{name: $name, chainId: $chainId, symbol: $symbol, decimals: $decimals, address: $address, logoURI: $logoURI, extensions: {twitter: $twitter, website: $website}} 
 
           # Append the new entry to the tokens array in FXList.json
           jq --argjson token_entry "$token_entry" '.tokens += [$token_entry]' FXList.json > tmp.FXList.json && mv tmp.FXList.json FXList.json
