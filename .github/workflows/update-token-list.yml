@@ -68,12 +68,11 @@ jobs:
               ;;
           esac
           echo "logo_filename=$logo_filename" >> $GITHUB_ENV
-      
+
       - name: Debug inputs
         run: |
-        echo "Twitter: '${{ github.event.inputs.twitter }}'"
-        echo "Website: '${{ github.event.inputs.website }}'"
-
+          echo "Twitter: '${{ github.event.inputs.twitter }}'"
+          echo "Website: '${{ github.event.inputs.website }}'"
 
       - name: Decode and save image
         run: |
