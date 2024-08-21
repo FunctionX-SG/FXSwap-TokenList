@@ -38,14 +38,18 @@ jobs:
             echo "changes=true" >> $GITHUB_ENV
           fi
 
-      - name: Merge Upstream Changes
+      - name: Merge Upstream Changes and Preserve All Workflows
         if: env.changes == 'true'
         run: |
           git merge -X ours --no-commit upstream/main || true
-          # Keep your versions of the workflows if they exist and were deleted upstream
-          git checkout --ours .github/workflows/
+          # Ensure all workflow files are preserved
+          for file in .github/workflows/*; do
+            if [ -e "$file" ]; then
+              git checkout --ours "$file"
+            fi
+          done
           git add .github/workflows/
-          git commit -m "Merge upstream changes while keeping forked workflows"
+          git commit -m "Merge upstream changes while keeping all forked workflows"
 
       # - name: Pull Latest Changes from Origin
       #   if: env.changes == 'true'
