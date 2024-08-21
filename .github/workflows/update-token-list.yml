@@ -96,6 +96,11 @@ jobs:
           # Save branch name to be used in subsequent steps
           echo "branch_name=$branch_name" >> $GITHUB_ENV
 
+      - name: Pull latest changes from main
+        run: |
+          git checkout main
+          git pull origin main
+
       - name: Print branch name
         run: |
           echo "Branch name: ${{ env.branch_name }}"
@@ -129,23 +134,23 @@ jobs:
         run: |
           jq --indent 4 . FXList.json > tmp.FXList.json && mv tmp.FXList.json FXList.json
 
-      # - name: Check if branch exists locally and delete if it does
-      #   run: |
-      #     if git show-ref --quiet refs/heads/${{ env.branch_name }}; then
-      #       echo "Branch exists locally. Deleting local branch ${{ env.branch_name }}."
-      #       git branch -D ${{ env.branch_name }}
-      #     else
-      #       echo "Branch does not exist locally."
-      #     fi
+      - name: Check if branch exists locally and delete if it does
+        run: |
+          if git show-ref --quiet refs/heads/${{ env.branch_name }}; then
+            echo "Branch exists locally. Deleting local branch ${{ env.branch_name }}."
+            git branch -D ${{ env.branch_name }}
+          else
+            echo "Branch does not exist locally."
+          fi
 
-      # - name: Check if branch exists remotely and delete if it does
-      #   run: |
-      #     if git ls-remote --exit-code --heads origin ${{ env.branch_name }}; then
-      #       echo "Branch exists remotely. Deleting remote branch ${{ env.branch_name }}."
-      #       git push origin --delete ${{ env.branch_name }}
-      #     else
-      #       echo "Branch does not exist remotely."
-      # fi
+      - name: Check if branch exists remotely and delete if it does
+        run: |
+          if git ls-remote --exit-code --heads origin ${{ env.branch_name }}; then
+            echo "Branch exists remotely. Deleting remote branch ${{ env.branch_name }}."
+            git push origin --delete ${{ env.branch_name }}
+          else
+            echo "Branch does not exist remotely."
+      fi
 
       - name: Commit changes
         run: |
@@ -153,6 +158,7 @@ jobs:
           git rm -r .github/workflows
           git add FXList.json Tokens/${{ github.event.inputs.address }}/${{ env.logo_filename }}
           git commit -m "Add token ${{ github.event.inputs.address }} ${{ github.event.inputs.name }} (${{ github.event.inputs.symbol }})"
+          git pull origin main --rebase
           git push origin ${{ env.branch_name }}
 
       - name: Install GitHub CLI
