@@ -51,9 +51,9 @@ jobs:
           git add .github/workflows/
           git commit -m "Merge upstream changes while keeping all forked workflows"
 
-      # - name: Pull Latest Changes from Origin
-      #   if: env.changes == 'true'
-      #   run: git pull origin main
+      - name: Pull Latest Changes from Origin
+        if: env.changes == 'true'
+        run: git pull origin main --rebase
 
       - name: Push Changes
         if: env.changes == 'true'
