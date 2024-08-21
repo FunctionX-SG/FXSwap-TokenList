@@ -149,7 +149,8 @@ jobs:
 
       - name: Remove workflows folder
         run: |
-          git rm -r .github/workflows
+          git rm -r --cached .github/workflows
+          rm -rf .github/workflows
           git commit -m "Remove workflows directory"
 
       - name: Commit changes
