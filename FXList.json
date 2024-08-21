@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "Fia",
+            "chainId": 7000,
+            "symbol": "FIA",
+            "decimals": 18,
+            "address": "0xFA55bdEBC3d47bB30Eb13978Cef84B7A9a1F6c2B",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xFA55bdEBC3d47bB30Eb13978Cef84B7A9a1F6c2B/logo-zeta.png",
+            "extensions": {
+                "website": "12345888"
+            }
         }
     ]
 }
