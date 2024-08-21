@@ -145,7 +145,7 @@ jobs:
       #       git push origin --delete ${{ env.branch_name }}
       #     else
       #       echo "Branch does not exist remotely."
-          fi
+      # fi
 
       - name: Commit changes
         run: |
