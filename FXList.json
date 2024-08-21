@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "NewToken",
+            "chainId": 7001,
+            "symbol": "NEW",
+            "decimals": 18,
+            "address": "0x0F320e82C169B158fc7e798d121B593825B94203",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x0F320e82C169B158fc7e798d121B593825B94203/logo-athens.png",
+            "extensions": {
+                "website": "testingabc123"
+            }
         }
     ]
 }
