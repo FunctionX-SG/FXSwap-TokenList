@@ -129,6 +129,15 @@ jobs:
         run: |
           jq --indent 4 . FXList.json > tmp.FXList.json && mv tmp.FXList.json FXList.json
 
+      - name: Check if branch exists
+        run: |
+          if git show-ref --quiet refs/heads/${{ env.branch_name }}; then
+            echo "Branch exists. Deleting branch ${{ env.branch_name }}."
+            git branch -D ${{ env.branch_name }}
+          else
+            echo "Branch does not exist. Proceeding to create a new branch."
+          fi
+
       - name: Commit changes
         run: |
           git checkout -b ${{ env.branch_name }}
