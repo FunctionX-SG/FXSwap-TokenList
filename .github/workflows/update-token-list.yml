@@ -129,22 +129,22 @@ jobs:
         run: |
           jq --indent 4 . FXList.json > tmp.FXList.json && mv tmp.FXList.json FXList.json
 
-      - name: Check if branch exists locally and delete if it does
-        run: |
-          if git show-ref --quiet refs/heads/${{ env.branch_name }}; then
-            echo "Branch exists locally. Deleting local branch ${{ env.branch_name }}."
-            git branch -D ${{ env.branch_name }}
-          else
-            echo "Branch does not exist locally."
-          fi
+      # - name: Check if branch exists locally and delete if it does
+      #   run: |
+      #     if git show-ref --quiet refs/heads/${{ env.branch_name }}; then
+      #       echo "Branch exists locally. Deleting local branch ${{ env.branch_name }}."
+      #       git branch -D ${{ env.branch_name }}
+      #     else
+      #       echo "Branch does not exist locally."
+      #     fi
 
-      - name: Check if branch exists remotely and delete if it does
-        run: |
-          if git ls-remote --exit-code --heads origin ${{ env.branch_name }}; then
-            echo "Branch exists remotely. Deleting remote branch ${{ env.branch_name }}."
-            git push origin --delete ${{ env.branch_name }}
-          else
-            echo "Branch does not exist remotely."
+      # - name: Check if branch exists remotely and delete if it does
+      #   run: |
+      #     if git ls-remote --exit-code --heads origin ${{ env.branch_name }}; then
+      #       echo "Branch exists remotely. Deleting remote branch ${{ env.branch_name }}."
+      #       git push origin --delete ${{ env.branch_name }}
+      #     else
+      #       echo "Branch does not exist remotely."
           fi
 
       - name: Commit changes
