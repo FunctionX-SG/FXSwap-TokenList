@@ -41,8 +41,10 @@ jobs:
       - name: Merge Upstream Changes
         if: env.changes == 'true'
         run: |
-          git merge -X ours --no-commit upstream/main
-          git checkout HEAD -- .github/workflows
+          git merge -X ours --no-commit upstream/main || true
+          # Keep your versions of the workflows if they exist and were deleted upstream
+          git checkout --ours .github/workflows/
+          git add .github/workflows/
           git commit -m "Merge upstream changes while keeping forked workflows"
 
       # - name: Pull Latest Changes from Origin
