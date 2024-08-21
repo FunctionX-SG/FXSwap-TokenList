@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "MyToken1",
+            "chainId": 7001,
+            "symbol": "MTK1",
+            "decimals": 16,
+            "address": "0x5a83091C604E2D7580b12E5A8ec9dfe8326203C2",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x5a83091C604E2D7580b12E5A8ec9dfe8326203C2/logo-athens.png",
+            "extensions": {
+                "website": "finaltest123"
+            }
         }
     ]
 }
