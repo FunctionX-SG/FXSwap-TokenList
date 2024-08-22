@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "MyToken123",
+            "chainId": 7000,
+            "symbol": "MYTK",
+            "decimals": 18,
+            "address": "0x2C925B8885951C5D97D3725f31cac8fcfc75B6E3",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x2C925B8885951C5D97D3725f31cac8fcfc75B6E3/logo-zeta.png",
+            "extensions": {
+                "website": "www.mytoken123.com"
+            }
         }
     ]
 }
