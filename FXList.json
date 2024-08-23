@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "hi",
+            "chainId": 90001,
+            "symbol": "hi",
+            "decimals": 18,
+            "address": "0x57Ad17F1e260F9F1c24C3321Ce51aB6Cb9CB7447",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x57Ad17F1e260F9F1c24C3321Ce51aB6Cb9CB7447/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
