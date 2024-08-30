@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "830 test1",
+            "chainId": 7001,
+            "symbol": "TEST1",
+            "decimals": 18,
+            "address": "0x614E8E9564F03C8F74E86b058a5e774277A1D467",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x614E8E9564F03C8F74E86b058a5e774277A1D467/logo-athens.png",
+            "extensions": {
+                "website": "123"
+            }
         }
     ]
 }
