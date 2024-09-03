@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "temp",
+            "chainId": 530,
+            "symbol": "tmp",
+            "decimals": 18,
+            "address": "0x0bB47973Dc18d3AdA45c52B5d7F036E3A55DBdCA",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x0bB47973Dc18d3AdA45c52B5d7F036E3A55DBdCA/logo.png",
+            "extensions": {}
         }
     ]
 }
