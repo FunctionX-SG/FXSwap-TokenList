@@ -1023,6 +1023,17 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "RETEST",
+            "chainId": 7001,
+            "symbol": "RETEST",
+            "decimals": 18,
+            "address": "0xE4DF7488DB5fE859b06423A34673EC64A0f93a87",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xE4DF7488DB5fE859b06423A34673EC64A0f93a87/logo-athens.png",
+            "extensions": {
+                "website": "https://deploy.marginx.io/details"
+            }
         }
     ]
 }
