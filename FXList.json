@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "Aipotato",
+            "chainId": 530,
+            "symbol": "AIPTO",
+            "decimals": 18,
+            "address": "0x9b3A90655E845442bd5AdB328Ee306d4dA80e062",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x9b3A90655E845442bd5AdB328Ee306d4dA80e062/logo.png",
+            "extensions": {}
         }
     ]
 }
