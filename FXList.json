@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "EUSKO KRIPTO",
+            "chainId": 530,
+            "symbol": "EUS",
+            "decimals": 18,
+            "address": "0xe664529A12de2D77B82d9Ad098EE195ee87Ae487",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe664529A12de2D77B82d9Ad098EE195ee87Ae487/logo.png",
+            "extensions": {}
         }
     ]
 }
