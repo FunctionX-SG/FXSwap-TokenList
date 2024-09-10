@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "LEO FURY",
+            "chainId": 530,
+            "symbol": "LEO",
+            "decimals": 18,
+            "address": "0x3638199E369328B92A9fD4d5F15B28cD851c4171",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x3638199E369328B92A9fD4d5F15B28cD851c4171/logo.png",
+            "extensions": {}
         }
     ]
 }
