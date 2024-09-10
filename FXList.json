@@ -1023,6 +1023,15 @@
                 "twitter": "www.x.com/test",
                 "website": "www.test.com"
             }
+        },
+        {
+            "name": "MINI",
+            "chainId": 530,
+            "symbol": "MINI",
+            "decimals": 1,
+            "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
+            "extensions": {}
         }
     ]
 }
