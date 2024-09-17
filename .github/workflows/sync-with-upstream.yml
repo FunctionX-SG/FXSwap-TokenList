@@ -1,14 +1,12 @@
 name: Sync with Upstream
-
 on:
   schedule:
-    - cron: "0 * * * *" # Runs every hour, adjust the cron schedule as needed
+    - cron: "0 * * * *" # Runs every hour, adjust as needed
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Forked Repo
         uses: actions/checkout@v3
@@ -38,39 +36,26 @@ jobs:
             echo "changes=true" >> $GITHUB_ENV
           fi
 
-      - name: Sync with Remote
+      - name: Merge Specific Changes from Upstream
         if: env.changes == 'true'
         run: |
-          echo "Syncing with remote..."
-          git pull origin main --rebase
-          echo "Sync completed"
+          # Create a temporary branch
+          git checkout -b temp_merge_branch
 
-      - name: Merge Upstream Changes
-        if: env.changes == 'true'
-        run: |
-          echo "Merging upstream changes..."
-          git merge --no-ff -X ours upstream/main -m "Merge upstream changes"
-          echo "Merge completed"
+          # Cherry-pick changes to Tokens/ and FXList.json
+          git cherry-pick upstream/main -- Tokens FXList.json
 
-      - name: Preserve All Workflows
-        if: env.changes == 'true'
-        run: |
-          echo "Preserving workflow files..."
-          for file in .github/workflows/*; do
-            if [ -e "$file" ]; then
-              git checkout --ours "$file"
-              echo "Preserved $file"
-            fi
-          done
-          git add .github/workflows/
-          git status
-          git commit -m "Restore our workflow files after merge" || echo "No changes to workflow files"
-          echo "Workflow preservation completed"
+          # Switch back to main branch
+          git checkout main
+
+          # Merge changes from temporary branch
+          git merge --no-ff temp_merge_branch -m "Merge upstream changes for Tokens and FXList.json"
+
+          # Delete temporary branch
+          git branch -D temp_merge_branch
 
       - name: Push Changes
         if: env.changes == 'true'
-        run: |
-          echo "Pushing changes..."
-          git push origin main || echo "Push failed"
+        run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
