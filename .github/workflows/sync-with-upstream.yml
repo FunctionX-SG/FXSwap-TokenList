@@ -42,8 +42,14 @@ jobs:
           # Create a temporary branch
           git checkout -b temp_merge_branch
 
-          # Cherry-pick changes to Tokens/ and FXList.json
-          git cherry-pick upstream/main -- Tokens FXList.json
+          # Fetch the latest changes from upstream
+          git fetch upstream
+
+          # Merge only the specific files/directories from upstream
+          git checkout upstream/main -- Tokens FXList.json
+
+          # Commit these changes
+          git commit -m "Merge upstream changes for Tokens and FXList.json"
 
           # Switch back to main branch
           git checkout main
