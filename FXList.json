@@ -1034,6 +1034,17 @@
             "extensions": {
                 "twitter": "https://x.com/Xanezu_Oficial"
             }
+        },
+        {
+            "name": "BABELEX TOKEN",
+            "chainId": 530,
+            "symbol": "BBLX",
+            "decimals": 18,
+            "address": "0x85CEdBd54C381BAAa00604208C208cDA5Be54eC1",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x85CEdBd54C381BAAa00604208C208cDA5Be54eC1/logo.png",
+            "extensions": {
+                "twitter": "https://x.com/Babelexbcn"
+            }
         }
     ]
 }
