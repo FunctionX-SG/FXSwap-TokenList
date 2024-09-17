@@ -38,25 +38,39 @@ jobs:
             echo "changes=true" >> $GITHUB_ENV
           fi
 
-      - name: Merge Upstream Changes and Preserve All Workflows
+      - name: Sync with Remote
         if: env.changes == 'true'
         run: |
-          git merge -X ours --no-commit upstream/main || true
-          # Ensure all workflow files are preserved
+          echo "Syncing with remote..."
+          git pull origin main --rebase
+          echo "Sync completed"
+
+      - name: Merge Upstream Changes
+        if: env.changes == 'true'
+        run: |
+          echo "Merging upstream changes..."
+          git merge --no-ff -X ours upstream/main -m "Merge upstream changes"
+          echo "Merge completed"
+
+      - name: Preserve All Workflows
+        if: env.changes == 'true'
+        run: |
+          echo "Preserving workflow files..."
           for file in .github/workflows/*; do
             if [ -e "$file" ]; then
               git checkout --ours "$file"
+              echo "Preserved $file"
             fi
           done
           git add .github/workflows/
-          git commit -m "Merge upstream changes while keeping all forked workflows"
-
-      - name: Pull Latest Changes from Origin
-        if: env.changes == 'true'
-        run: git pull origin main --rebase
+          git status
+          git commit -m "Restore our workflow files after merge" || echo "No changes to workflow files"
+          echo "Workflow preservation completed"
 
       - name: Push Changes
         if: env.changes == 'true'
-        run: git push origin main
+        run: |
+          echo "Pushing changes..."
+          git push origin main || echo "Push failed"
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
