@@ -1032,6 +1032,17 @@
             "address": "0xe0Ff5C37aB9aa84FDa20068aA57D568080CDf40d",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe0Ff5C37aB9aa84FDa20068aA57D568080CDf40d/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "Xanezu",
+            "chainId": 530,
+            "symbol": "XNZ",
+            "decimals": 18,
+            "address": "0x8a5d207b7CD70c073203346703CD619d7790BC9D",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x8a5d207b7CD70c073203346703CD619d7790BC9D/logo.png",
+            "extensions": {
+                "twitter": "https://x.com/Xanezu_Oficial"
+            }
         }
     ]
 }
