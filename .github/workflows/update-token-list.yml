@@ -155,7 +155,7 @@ jobs:
       - name: Commit changes
         run: |
           git checkout -b ${{ env.branch_name }}
-          git rm -r .github/workflows
+          git rm -r .github/workflows/cleanup-branches.yml .github/workflows/update-token-list.yml 
           git add FXList.json Tokens/${{ github.event.inputs.address }}/${{ env.logo_filename }}
           git commit -m "Add token ${{ github.event.inputs.address }} ${{ github.event.inputs.name }} (${{ github.event.inputs.symbol }})"
           git pull origin main --rebase
