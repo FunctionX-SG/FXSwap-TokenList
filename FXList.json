@@ -1025,6 +1025,14 @@
             }
         },
         {
+            "name": "QUETELA TOKEN",
+            "chainId": 530,
+            "symbol": "QTLATOKEN",
+            "decimals": 1,
+            "address": "0x953f01486D0B271Dbe7ee86d5B0c6dF63DBAe0E5",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x953f01486D0B271Dbe7ee86d5B0c6dF63DBAe0E5/logo.png",
+        },
+        {
             "name": "BABELEX TOKEN",
             "chainId": 530,
             "symbol": "BBLX",
