@@ -1095,6 +1095,15 @@
             "address": "0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44/logo-testnet.png",
             "extensions": {}
+        },
+        {
+            "name": "TEST3",
+            "chainId": 90001,
+            "symbol": "TEST2",
+            "decimals": 18,
+            "address": "0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
