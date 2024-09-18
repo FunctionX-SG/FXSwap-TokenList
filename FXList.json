@@ -1025,6 +1025,14 @@
             }
         },
         {
+            "name": "RED DOLPHIN",
+            "chainId": 530,
+            "symbol": "RED",
+            "decimals": 18,
+            "address": "0x0643d902a37FaC6E03249A908739a669f8982994",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x0643d902a37FaC6E03249A908739a669f8982994/logo.png",
+        },
+        {
             "name": "Aipotato",
             "chainId": 530,
             "symbol": "AIPTO",
