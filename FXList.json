@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "latesttoken",
+            "chainId": 90001,
+            "symbol": "LATEST",
+            "decimals": 18,
+            "address": "0x4b831f781623a85db92A91ADE55d4D16FDD46a8d",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4b831f781623a85db92A91ADE55d4D16FDD46a8d/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
