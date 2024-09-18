@@ -1025,6 +1025,15 @@
             }
         },
         {
+            "name": "Mystical Wow",
+            "chainId": 530,
+            "symbol": "WOW",
+            "decimals": 18,
+            "address": "0xe0Ff5C37aB9aa84FDa20068aA57D568080CDf40d",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe0Ff5C37aB9aa84FDa20068aA57D568080CDf40d/logo.png",
+            "extensions": {}
+        },
+        {
             "name": "Xanezu",
             "chainId": 530,
             "symbol": "XNZ",
