@@ -1005,26 +1005,6 @@
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x7c8dDa80bbBE1254a7aACf3219EBe1481c6E01d7/logo-zeta.png"
         },
         {
-            "name": "Ai Meow",
-            "chainId": 7000,
-            "symbol": "AIMEOW",
-            "decimals": 18,
-            "address": "0x4a4B9616653515Dd22CC316c6e538fF223144252",
-            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4a4B9616653515Dd22CC316c6e538fF223144252/logo-zeta.png"
-        },
-        {
-            "name": "MyToken1",
-            "chainId": 7001,
-            "symbol": "MTK1",
-            "decimals": 16,
-            "address": "0x5a83091C604E2D7580b12E5A8ec9dfe8326203C2",
-            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x5a83091C604E2D7580b12E5A8ec9dfe8326203C2/logo-athens.png",
-            "extensions": {
-                "twitter": "www.x.com/test",
-                "website": "www.test.com"
-            }
-        },
-        {
             "name": "Mystical Wow",
             "chainId": 530,
             "symbol": "WOW",
@@ -1043,6 +1023,42 @@
             "extensions": {
                 "twitter": "https://x.com/Xanezu_Oficial"
             }
+        },
+        {
+            "name": "Aipotato",
+            "chainId": 530,
+            "symbol": "AIPTO",
+            "decimals": 18,
+            "address": "0x9b3A90655E845442bd5AdB328Ee306d4dA80e062",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x9b3A90655E845442bd5AdB328Ee306d4dA80e062/logo.png",
+            "extensions": {}
+        },
+        {
+            "name": "EUSKO KRIPTO",
+            "chainId": 530,
+            "symbol": "EUS",
+            "decimals": 18,
+            "address": "0xe664529A12de2D77B82d9Ad098EE195ee87Ae487",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe664529A12de2D77B82d9Ad098EE195ee87Ae487/logo.png",
+            "extensions": {}
+        },
+        {
+            "name": "LEO FURY",
+            "chainId": 530,
+            "symbol": "LEO",
+            "decimals": 18,
+            "address": "0x3638199E369328B92A9fD4d5F15B28cD851c4171",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x3638199E369328B92A9fD4d5F15B28cD851c4171/logo.png",
+            "extensions": {}
+        },
+        {
+            "name": "MINI",
+            "chainId": 530,
+            "symbol": "MINI",
+            "decimals": 1,
+            "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
+            "extensions": {}
         }
     ]
 }
