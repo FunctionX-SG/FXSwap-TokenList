@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "Test",
+            "chainId": 90001,
+            "symbol": "TST",
+            "decimals": 18,
+            "address": "0x2EeBC54Ac3dFB3605d14DCAb803F657580435548",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x2EeBC54Ac3dFB3605d14DCAb803F657580435548/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
