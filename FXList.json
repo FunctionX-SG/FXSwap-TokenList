@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "hihi",
+            "chainId": 90001,
+            "symbol": "HI",
+            "decimals": 18,
+            "address": "0x16A118Bb98557457F792e68aC0b1F1f28A81C8cB",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x16A118Bb98557457F792e68aC0b1F1f28A81C8cB/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
