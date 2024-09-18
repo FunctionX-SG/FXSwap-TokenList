@@ -932,14 +932,6 @@
             "address": "0xE00e1cbdd11e9D90d2aC956AE7A133CB0B172fB5",
             "logoURI": "https://raw.githubusercontent.com/aguscryptocom/images/main/token/0xE00e1cbdd11e9D90d2aC956AE7A133CB0B172fB5.png"
         },
-                {
-            "name": "Test Flow",
-            "chainId": 90001,
-            "symbol": "TST",
-            "decimals": 18,
-            "address": "0x000e1cbdd11e9D90d2aC956AE7A133CB0B172fB5",
-            "logoURI": "https://raw.githubusercontent.com/aguscryptocom/images/main/token/0x000e1cbdd11e9D90d2aC956AE7A133CB0B172fB5.png"
-        },
         {
             "name": "USDC",
             "chainId": 7001,
