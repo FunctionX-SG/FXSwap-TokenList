@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "Haha Llama",
+            "chainId": 530,
+            "symbol": "llama",
+            "decimals": 1,
+            "address": "0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025/logo.png",
+            "extensions": {}
         }
     ]
 }
