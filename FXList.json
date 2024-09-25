@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "CheeseBurger",
+            "chainId": 530,
+            "symbol": "CBC",
+            "decimals": 1,
+            "address": "0x7041cdA26F02e10A03635a92bc9C6CAACd74745B",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x7041cdA26F02e10A03635a92bc9C6CAACd74745B/logo.png",
+            "extensions": {}
         }
     ]
 }
