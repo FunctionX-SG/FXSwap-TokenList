@@ -1093,7 +1093,32 @@
             "symbol": "llama",
             "decimals": 1,
             "address": "0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025",
-            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025/logo.png",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025/logo.png"
+        },
+        {
+            "name": "CheeseBurger",
+            "chainId": 530,
+            "symbol": "CBC",
+            "decimals": 1,
+            "address": "0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E/logo.png"
+        },
+        {
+            "name": "TEST2",
+            "chainId": 90001,
+            "symbol": "TEST2",
+            "decimals": 18,
+            "address": "0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x5c8eFE3381cF299A4d9852CD7c503AaB25F5Eb44/logo-testnet.png",
+            "extensions": {}
+        },
+        {
+            "name": "LAST",
+            "chainId": 90001,
+            "symbol": "LA",
+            "decimals": 18,
+            "address": "0xe46713B0d6eBea9229d0f353dE75D157D8659E99",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe46713B0d6eBea9229d0f353dE75D157D8659E99/logo-testnet.png",
             "extensions": {}
         }
     ]
