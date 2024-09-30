@@ -1088,6 +1088,14 @@
             "extensions": {}
         },
         {
+            "name": "CheeseBurger",
+            "chainId": 530,
+            "symbol": "CBC",
+            "decimals": 1,
+            "address": "0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E/logo.png",
+        },
+        {
             "name": "TEST2",
             "chainId": 90001,
             "symbol": "TEST2",
