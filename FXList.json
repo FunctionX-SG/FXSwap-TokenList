@@ -1088,12 +1088,20 @@
             "extensions": {}
         },
         {
+            "name": "Haha Llama",
+            "chainId": 530,
+            "symbol": "llama",
+            "decimals": 1,
+            "address": "0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x35eFda082618Ae9Db97CF8BdA564ef59382Dd025/logo.png"
+        },
+        {
             "name": "CheeseBurger",
             "chainId": 530,
             "symbol": "CBC",
             "decimals": 1,
             "address": "0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E",
-            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E/logo.png",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xAB5c13FfB9aa5F6792276c1034A2bf630c490A3E/logo.png"
         },
         {
             "name": "TEST2",
