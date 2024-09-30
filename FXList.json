@@ -1120,6 +1120,15 @@
             "address": "0xe46713B0d6eBea9229d0f353dE75D157D8659E99",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe46713B0d6eBea9229d0f353dE75D157D8659E99/logo-testnet.png",
             "extensions": {}
+        },
+        {
+            "name": "LAST2",
+            "chainId": 90001,
+            "symbol": "LA2",
+            "decimals": 18,
+            "address": "0xe46713B0d6eBea9229d0f353dE75D157D8659E99",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe46713B0d6eBea9229d0f353dE75D157D8659E99/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
