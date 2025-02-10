@@ -1086,6 +1086,18 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "Copy TRUMP",
+            "chainId": 530,
+            "symbol": "TRUMP",
+            "decimals": 18,
+            "address": "0x8Be11086BcB4984e53Fb775261A94c1611Cab1D5",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x8Be11086BcB4984e53Fb775261A94c1611Cab1D5/logo.png",
+            "extensions": {
+                "twitter": "https://x.com/GetTrumpMemes",
+                "website": "https://gettrumpmemes.com/"
+            }
         }
     ]
 }
