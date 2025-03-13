@@ -1086,6 +1086,15 @@
             "address": "0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x4F7A8B0C35Aa437a8aB1cB414A71FA0950cEeAE1/logo.png",
             "extensions": {}
+        },
+        {
+            "name": "MyToken",
+            "chainId": 90001,
+            "symbol": "MTK",
+            "decimals": 18,
+            "address": "0x9860bf0d55b89E282441F73b201c5363b8A7850b",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0x9860bf0d55b89E282441F73b201c5363b8A7850b/logo-testnet.png",
+            "extensions": {}
         }
     ]
 }
