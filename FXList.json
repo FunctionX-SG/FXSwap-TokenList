@@ -531,7 +531,8 @@
             "address": "0xC34316C3081D334b03020F225B59e17049879Fee",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xC34316C3081D334b03020F225B59e17049879Fee/logo.png",
             "extensions": {
-                "twitter": "https://twitter.com/baygoncoin"
+                "twitter": "https://x.com/BaygonToken",
+                "website": "https://baygon.webby.fun/"
             }
         },
         {
