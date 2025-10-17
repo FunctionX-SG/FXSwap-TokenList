@@ -1016,6 +1016,15 @@
             "address": "0xe46713B0d6eBea9229d0f353dE75D157D8659E99",
             "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xe46713B0d6eBea9229d0f353dE75D157D8659E99/logo-testnet.png",
             "extensions": {}
+        },
+        {
+            "name": "Chiserli",
+            "chainId": 530,
+            "symbol": "CHIS",
+            "decimals": 18,
+            "address": "0xA90D86BF4A86E9dA647ea4a744Ee25826cf41Af0",
+            "logoURI": "https://raw.githubusercontent.com/FunctionX-SG/FXSwap-TokenList/main/Tokens/0xA90D86BF4A86E9dA647ea4a744Ee25826cf41Af0/logo.png",
+            "extensions": {}
         }
     ]
 }
